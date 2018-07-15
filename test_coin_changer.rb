@@ -8,13 +8,17 @@ class TestCoinChanger < Minitest::Test
 		assert_equal(coins, coin_arr(coins))
 		assert_equal(Array, coin_arr(coins).class)
 		assert_equal(4, coin_arr(coins).size)
+		assert_equal([25, 10, 5, 1], coin_arr(coins))
 	end
 
 	def test_coin_arr_is_sorted
-		coins = 25, 10, 5, 1
-		assert_equal(25, coins[0])
-		assert_equal(10, coins[1])
-		assert_equal(5, coins[2])
-		assert_equal(1, coins[3])
+		coins = 10, 25, 5, 1
+		assert_equal(25, coin_arr(coins)[0])
+		assert_equal(10, coin_arr(coins)[1])
+		assert_equal(5, coin_arr(coins)[2])
+		assert_equal(1, coin_arr(coins)[3])
 	end
+
+	# # def test_	
+		
 end
