@@ -6,7 +6,7 @@ def coin_arr(coins)
 end
 
 
-def sort_it_out(coins, money)
+def coin_value_hash(coins)
 	
 end
 
