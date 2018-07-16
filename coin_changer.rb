@@ -5,6 +5,7 @@ def coin_arr(coin_val)
 end
 
 def coin_name_arr(coin_name)
+	coin_name
 end
 
 
