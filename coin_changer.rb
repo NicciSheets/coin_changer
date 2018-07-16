@@ -1,11 +1,9 @@
-require 'pp'
 
 def coin_arr(coins)
 	coins.sort! { |x, y| y <=> x }
 end
 
 def coin_change(money, coins)
-	change = {}
 	coin_arr(coins).map { |coin| f = money/coin; money%=coin; Array.new(f){coin} }
 end
 
@@ -14,9 +12,9 @@ def coin_hash(money, coins)
 	coin_hash = { quarter: coin_change_flat.count(25), dime: coin_change_flat.count(10), nickel: coin_change_flat.count(5), penny: coin_change_flat.count(1) }
 end
 
-# money = 67
+#money = 67
 # coin_name = ["quarter", "dime", "nickel", "penny"]
-# coins = [25, 10, 5, 1]
-# pp coin_change(money, coins)
-# pp coin_hash(money, coins)
+#coins = [25, 10, 5, 1]
+#p coin_change(money, coins)
+#p coin_hash(money, coins)
 
