@@ -1,7 +1,7 @@
 require "sinatra"
 require_relative "coin_changer.rb"
 get '/' do
-	result = result || ""
+	result = result || {}
 erb :input, locals: {result: result}
 end
 post '/get_change' do
