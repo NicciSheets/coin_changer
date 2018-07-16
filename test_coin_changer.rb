@@ -20,12 +20,13 @@ class TestCoinChanger < Minitest::Test
 	end
 
 	def test_assert_building_hash_with_coin_values_and_names
-		assert_equal({"quarter"=>25, "dime"=>10, "nickel"=>5, "penny"=>1}, coin_hash())
-		assert_equal(Hash, coin_hash().class)
-		assert_equal(25, coin_hash()["quarter"])
-		assert_equal(10, coin_hash()["dime"])
-		assert_equal(5, coin_hash()["nickel"])
-		assert_equal(1, coin_hash()["penny"])
+		coin_with_amount= {quarter: 25, dime: 10, nickel: 5, penny: 1}
+		assert_equal(coin_with_amount, coin_hash(coin_with_amount))
+		assert_equal(Hash, coin_hash(coin_with_amount).class)
+		assert_equal(25, coin_hash(coin_with_amount)[:quarter])
+		assert_equal(10, coin_hash(coin_with_amount)[:dime])
+		assert_equal(5, coin_hash(coin_with_amount)[:nickel])
+		assert_equal(1, coin_hash(coin_with_amount)[:penny])
 	end
 	
 end
