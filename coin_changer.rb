@@ -12,5 +12,8 @@ def multidimen_arr(coin_val) #creates one array with subarrays that follow patte
 end
 
 
+def coin_name_arr(coin_val)
+end
+
 #coin_val = 25, 10, 5, 1
 #p multidimen_arr(coin_val)

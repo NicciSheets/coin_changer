@@ -26,4 +26,9 @@ class TestCoinChanger < Minitest::Test
 		assert_equal([["", 25], ["", 10], ["", 5], ["", 1]], multidimen_arr(coin_val))
 	end
 
+	def test_plugging_in_coin_names_for_each_value
+		coin_val = 5, 10, 25, 1
+		assert_equal([["quarter", 25], ["dime", 10], ["nickel", 5], ["penny", 1]], coin_name_arr(coin_val))
+	end
+
 end
