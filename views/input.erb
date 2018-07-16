@@ -1,0 +1,21 @@
+
+<h1> Please enter a number to make change. </h1>
+<form method = "post" action = "get_change"> <!--action is where you're routing data -->
+<input type = "text" name = "input_number">
+<input type = "Submit" value = "Click Here!"> <!--value changes the submit button -->
+</form>
+<% result.each_pair do |key, value| %>
+	<% if value > 0 %>
+		<% if value > 1 %>
+			<%= value %> <!-- the equals sign (=) means it shows on 	user screen -->
+			<% if key.to_s == "penny" && value > 1 %>
+				<%= key = "pennies" %>
+			<% elsif value > 1 %>
+				<%= key.to_s + "s" %>
+			<% end %>
+	<% else %>
+		<%= value %>
+		<%= key %>
+		<% end %>
+	<% end %>
+<% end %>		

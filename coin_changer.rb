@@ -12,10 +12,10 @@ def coin_hash(money, coins)
 	coin_hash = { quarter: coin_change_flat.count(25), dime: coin_change_flat.count(10), nickel: coin_change_flat.count(5), penny: coin_change_flat.count(1) }
 end
 
+
 #money = 67
-# coin_name = ["quarter", "dime", "nickel", "penny"]
 #coins = [25, 10, 5, 1]
 #p coin_change(money, coins)
 #p coin_hash(money, coins)
 
-#p coin_hash(67, [10, 25, 5, 1])
+#p coin_hash(7657856785758, [10, 25, 5, 1])
