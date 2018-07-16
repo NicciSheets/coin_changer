@@ -18,3 +18,4 @@ end
 #p coin_change(money, coins)
 #p coin_hash(money, coins)
 
+#p coin_hash(67, [10, 25, 5, 1])
