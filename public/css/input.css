@@ -1,0 +1,40 @@
+body {
+    background-position: bottom;
+    background-image: url(/img/money.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading_wombat {
+	color: red;
+	text-align: center;
+}
+
+.input_container {
+	text-align: center;
+    position: fixed;
+    bottom: 30;
+    left: 300;
+    right: 300;
+} 
+
+.text_box {
+	height: 5em;
+    width: 11em;
+    background-color: white;
+    border-radius: 25px;
+    border-style: none;
+}
+
+.submit_box {
+	    background-color: red;
+    width: 6em;
+    height: 3em;
+    margin-left: 8px;
+    border-radius: 12px;
+    border-style: none;
+    color: white;
+    text-align: inherit;
+    white-space: normal;
+    padding: inherit;
+}

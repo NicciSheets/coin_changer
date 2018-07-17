@@ -13,7 +13,7 @@ def coin_hash(money, coins)
 end
 
 
-#money = 67
+#money = 123
 #coins = [25, 10, 5, 1]
 #p coin_change(money, coins)
 #p coin_hash(money, coins)
