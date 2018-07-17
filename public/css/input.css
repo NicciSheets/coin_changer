@@ -1,13 +1,15 @@
 body {
-    background-position: bottom;
+         background-position: top;
     background-image: url(/img/money.gif);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: #262626;
 }
 
 .heading_wombat {
-	color: red;
-	text-align: center;
+    color: red;
+    text-align: center;
+    font-family: cursive;
 }
 
 .input_container {
@@ -36,5 +38,6 @@ body {
     color: white;
     text-align: inherit;
     white-space: normal;
+    font-family:cursive;
     padding: inherit;
 }
