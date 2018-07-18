@@ -1,10 +1,14 @@
 
 def coin_arr(coins)
+	coins.gsub(/[^0-9]/i, '')
 	coins.sort! { |x, y| y <=> x }
 end
 
 def coin_change(money, coins)
-	coin_arr(coins).map { |coin| f = money/coin; money%=coin; Array.new(f){coin} }
+	coin_arr(coins).map  |coin| 
+	f = money/coin; 
+	money%=coin 
+	Array.new(f){coin} 
 end
 
 def coin_hash(money, coins)

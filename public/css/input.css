@@ -14,15 +14,15 @@ body {
     margin-top: -25px;
 }
 
-.input_container {
-	text-align: center;
+.box {
+	    text-align: center;
     position: fixed;
     bottom: 30;
-    left: 300;
-    right: 300;
+    left: 570;
+    right: 400;
 } 
 
-.text_box {
+.icon {
 	height: 5em;
     width: 11em;
     background-color: white;
@@ -30,16 +30,16 @@ body {
     border-style: none;
 }
 
-.submit_box {
-	    background-color: red;
-    width: 6em;
-    height: 3em;
-    margin-left: 8px;
+.container-1 {
+	  background-color: red;
+    width: 13em;
+    height: 5em;
     border-radius: 12px;
+    left: 300;
     border-style: none;
     color: white;
-    text-align: inherit;
+    text-align: center;
     white-space: normal;
-    font-family:cursive;
-    padding: inherit;
+    font-family: cursive;
+    padding: 10;
 }
