@@ -7,9 +7,11 @@ body {
 }
 
 .heading_wombat {
-    color: red;
+        color: red;
     text-align: center;
     font-family: cursive;
+    font-size: 65px;
+    margin-top: -25px;
 }
 
 .input_container {
