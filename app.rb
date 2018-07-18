@@ -5,7 +5,8 @@ get '/' do
 erb :input, locals: {result: result}
 end
 post '/get_change' do
-  input = params[:input_number].to_i
+	puts params
+  input = params[:coin_input].to_i
   coins = 10, 25, 5, 1
   result = coin_hash(input, coins)
   p result.class

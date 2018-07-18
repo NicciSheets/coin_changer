@@ -6,22 +6,22 @@
 <div class="box">
   <div class="container-1">
       <span class="icon"><i class="fa fa-search"></i></span>
-      <input type="search" id="search" placeholder="Show me the money..." />
+      <input type="search" name = "coin_input" id="search" placeholder="Show me the money..." />
   </div>
 </div>
 </form>
 <% result.each_pair do |key, value| %>
 	<% if value > 0 %>
 		<% if value > 1 %>
-			<%= value %> <!-- the equals sign (=) means it shows on 	user screen -->
+			<div style = "color: white" > <%= value %> </div><!-- the equals sign (=) means it shows on 	user screen -->
 			<% if key.to_s == "penny" && value > 1 %>
-				<%= key = "pennies" %>
+				<div style = "color: white" > <%= key = "pennies" %> </div>
 			<% elsif value > 1 %>
-				<%= key.to_s + "s" %>
+				<div style = "color: white" > <%= key.to_s + "s" %> </div>
 			<% end %>
-	<% else %>
-		<%= value %>
-		<%= key %>
+		<% else %>
+			<div style = "color: white" > <%= value %> </div>
+			<div style = "color: white" > <%= key %> </div>
 		<% end %>
 	<% end %>
 <% end %>
