@@ -14,12 +14,11 @@ body {
     margin-top: -25px;
 }
 
-.box {
-	    text-align: center;
+.box {    
+        text-align: center;
     position: fixed;
     bottom: 30;
-    left: 570;
-    right: 400;
+    left: 630;
 } 
 
 .icon {
@@ -28,12 +27,13 @@ body {
     background-color: white;
     border-radius: 25px;
     border-style: none;
+
 }
 
 .container-1 {
 	  background-color: red;
-    width: 13em;
-    height: 5em;
+    width: 14em;
+    height: 8em;
     border-radius: 12px;
     left: 300;
     border-style: none;
@@ -43,3 +43,8 @@ body {
     font-family: cursive;
     padding: 10;
 }
+
+.results { 
+
+
+ }
