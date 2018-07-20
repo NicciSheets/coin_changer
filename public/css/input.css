@@ -3,6 +3,7 @@ body {
     background-image: url(/img/money.gif);
     background-repeat: no-repeat;
     background-size: contain;
+    background-attachment: fixed
     background-color: #262626;
 }
 
@@ -11,7 +12,7 @@ body {
     text-align: center;
     font-family: cursive;
     font-size: 65px;
-    margin-top: -25px;
+    margin-top: -15px;
 }
 
 .box {        
