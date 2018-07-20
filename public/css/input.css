@@ -17,13 +17,13 @@ body {
 
 .box {        
     text-align: center;
-    position: fixed;
-    bottom: 40;
-    left: 550
+    position: sticky;
+    /*bottom: 40;*/
+    /*left: 550;*/
 } 
 
 .icon {
-	height: 5em;
+	height: 2em;
     width: 11em;
     background-color: white;
     border-radius: 25px;
@@ -32,20 +32,22 @@ body {
 }
 
 .container-1 {
-	  background-color: red;
-    width: 14em;
-    height: 8em;
+	    background-color: red;
+    width: 13em;
+    height: 2em;
     border-radius: 12px;
     border-style: none;
     color: white;
     text-align: center;
     white-space: normal;
     font-family: cursive;
-    padding: 10;
+    padding: 9px;
+    padding-top: 15px;
 }
 
-.container-2 {
-    font-family: cursive;
+.box2 {
+       font-family: cursive;
+    font-weight: bold;
 }
 
 .results {
