@@ -33,7 +33,7 @@ body {
 
 .container-1 {
 	    background-color: red;
-    width: 13em;
+    width: 12em;
     height: 2em;
     border-radius: 12px;
     border-style: none;
@@ -47,7 +47,6 @@ body {
 
 .box2 {
        font-family: cursive;
-    font-weight: bold;
 }
 
 .results {
