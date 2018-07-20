@@ -16,9 +16,9 @@ body {
 
 .box {    
         text-align: center;
-    position: fixed;
-    bottom: 30;
-    left: 630;
+    position: relative;
+    bottom: -400px;
+    left: 625;
 } 
 
 .icon {
@@ -44,7 +44,15 @@ body {
     padding: 10;
 }
 
-.results { 
+.box2 {
+        text-align: left;
+    position: relative;
+    bottom: -267px
+}
+
+.container-2 {
+        font-family: cursive;
+
 
 
  }

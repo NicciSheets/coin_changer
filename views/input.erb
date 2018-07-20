@@ -11,20 +11,22 @@
 </div>
 </form>
 <div class = "box2">
-<% result.each_pair do |key, value| %>
-	<% if value > 0 %>
-		<% if value > 1 %>
-			<div style = "color: white" class="results" > <%= value %> </div><!-- the equals sign (=) means it shows on 	user screen -->
-			<% if key.to_s == "penny" && value > 1 %>
-				<div style = "color: white" class="results" > <%= key = "pennies" %> </div>
-			<% elsif value > 1 %>
-				<div style = "color: white" class="results" > <%= key.to_s + "s" %> </div>
+	<div class="container-2">	
+	<% result.each_pair do |key, value| %>
+		<% if value > 0 %>
+			<% if value > 1 %>
+				<div style = "color: white" class="results" > <%= value %> </div><!-- the equals sign (=) means it shows on 	user screen -->
+				<% if key.to_s == "penny" && value > 1 %>
+					<div style = "color: white" class="results" > <%= key = "pennies" %> </div>
+				<% elsif value > 1 %>
+					<div style = "color: white" class="results" > <%= key.to_s + "s" %> </div>
+				<% end %>
+			<% else %>
+				<div style = "color: white" class="results" > <%= value %> </div>
+				<div style = "color: white" class="results" > <%= key %> </div>
 			<% end %>
-		<% else %>
-			<div style = "color: white" class="results" > <%= value %> </div>
-			<div style = "color: white" class="results" > <%= key %> </div>
 		<% end %>
 	<% end %>
-<% end %>
+</div>
 </div>
 </body>		

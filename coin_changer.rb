@@ -22,9 +22,9 @@ def coin_hash(money, coins)
 end
 
 
-money = 123
-coins = [25, 10, 5, 1]
+#money = 123
+#coins = [25, 10, 5, 1]
 ##p coin_change(money, coins)
-p coin_hash(money, coins)
+#p coin_hash(money, coins)
 
-#p coin_hash(7657856785758, [10, 25, 5, 1])
+#p coin_hash(9999999999999999999999999999, [10, 25, 5, 1])
