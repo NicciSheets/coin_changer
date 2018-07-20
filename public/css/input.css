@@ -14,11 +14,11 @@ body {
     margin-top: -25px;
 }
 
-.box {    
-        text-align: center;
-    position: relative;
-    bottom: -330px;
-    left: 542;
+.box {        
+    text-align: center;
+    position: fixed;
+    bottom: 40;
+    left: 625
 } 
 
 .icon {
@@ -35,7 +35,6 @@ body {
     width: 14em;
     height: 8em;
     border-radius: 12px;
-    left: 300;
     border-style: none;
     color: white;
     text-align: center;
@@ -44,15 +43,8 @@ body {
     padding: 10;
 }
 
-.box2 {
+.results {
         text-align: left;
-    position: ;
     bottom: -158px
+    font-family: cursive;
 }
-
-.container-2 {
-        font-family: cursive;
-
-
-
- }
