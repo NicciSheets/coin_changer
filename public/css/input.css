@@ -17,8 +17,8 @@ body {
 .box {    
         text-align: center;
     position: relative;
-    bottom: -400px;
-    left: 625;
+    bottom: -330px;
+    left: 542;
 } 
 
 .icon {
@@ -47,7 +47,7 @@ body {
 .box2 {
         text-align: left;
     position: relative;
-    bottom: -267px
+    bottom: -158px
 }
 
 .container-2 {
