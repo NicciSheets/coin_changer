@@ -3,29 +3,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<h1 id="heading" name="my_heading" class="heading_wombat"> Make It Rain </h1>
 <form method = "post" action = "get_change"> <!--action is where you're routing data -->
+<h1 id="heading" name="my_heading" class="heading_wombat"> Make It Rain </h1>
 <div class="box">
   <div class="container-1">
       <span class="icon"><i class="fa fa-search"></i></span>
-      <input type="number" name = "coin_input" id="search" placeholder="Show me the money..." />
+      <input type="number" name = "coin_input" id="search" placeholder="Show me the money..." /></n><br>
+      <button type="submit"> $$ </button>
   </div>
 </div>
 </form>
 <div class = "box2">
-	<div class="container-2">	
+<div class = "box3">
+	<%= input2 %>
+</div>
+<div class = "box4">
 	<% result.each_pair do |key, value| %>
 		<% if value > 0 %>
 			<% if value > 1 %>
-				<div style = "color: red" class="results" > <%= value %> </div><!-- the equals sign (=) means it shows on 	user screen -->
-				<% if key.to_s == "penny" && value > 1 %>
-					<div style = "color: red" class="results" > <%= key = "pennies" %> </div>
-				<% elsif value > 1 %>
-					<div style = "color: red" class="results" > <%= key.to_s + "s" %> </div>
-				<% end %>
+				<%= value %><!-- the equals sign (=) means it shows on 	user screen -->
+					<% if key.to_s == "Penny" && value > 1 %>
+						<%= key = "Pennies" %>
+					<% elsif value > 1 %>
+						<%= key.to_s + "s" %>
+					<% end %>
 			<% else %>
-				<div style = "color: red" class="results" > <%= value %> </div>
-				<div style = "color: red" class="results" > <%= key %> </div>
+				<%= value %> <%= key %>
 			<% end %>
 		<% end %>
 	<% end %>

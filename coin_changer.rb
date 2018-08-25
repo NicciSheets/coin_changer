@@ -18,7 +18,7 @@ end
 
 def coin_hash(money, coins)
 	coin_change2 = coin_change(money, coins)
-	coin_hash = { quarter: coin_change2[0], dime: coin_change2[1], nickel: coin_change2[2], penny: coin_change2[3] }
+	coin_hash = { Quarter: coin_change2[0], Dime: coin_change2[1], Nickel: coin_change2[2], Penny: coin_change2[3] }
 end
 
 

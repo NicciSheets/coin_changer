@@ -9,54 +9,89 @@
 */
 body {
 	text-align: center;
-	background-color:#262626;
-	background-position: top;
+    background-color: #262626;
+    background-position: center;
     background-image: url(/img/money.gif);
     background-repeat: no-repeat;
     background-size: contain;
-    background-attachment: fixed
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+	border: 1px solid #262626;
 }
 
 .heading_wombat {
-        color: red;
+       color: red;
     text-align: center;
     font-family: cursive;
     font-size: 65px;
-    margin-top: -15px;
+    margin-top: -18px;
 }
 
 .box {        
     text-align: center;
-    position: sticky;
+    position: fixed;
+    bottom: 126px;
+    margin: auto;
+    width: 100%;
 } 
 
 .icon {
 	height: 2em;
     width: 11em;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 25px;
     border-style: none;
-
 }
 
 .container-1 {
-	    background-color: red;
-    width: 12em;
-    height: 2em;
+	        background-color: red;
+    width: fit-content;
+    height: fit-content;
     border-radius: 12px;
     border-style: none;
     color: white;
     text-align: center;
     white-space: normal;
     font-family: cursive;
-    padding: 9px;
-    padding-top: 15px;
+    padding: 12px;
+    margin: auto;
 }
 
 .box2 {
        font-family: cursive;
+    display: block;
+    color: red;
+    font-size: 3.0vw;
+    bottom: 25px;
+    margin: auto;
+    position: fixed;
+    width: 100%;
+}
 }
 
-.results {
+/*.results {
         text-align: left
+}*/
+
+button {
+	    background-color: #ffffff;
+    border: 1px solid #262626;
+    color: #262626;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 1px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #262626;
+    color:  #ffffff;
 }
