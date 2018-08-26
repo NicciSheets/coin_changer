@@ -7,46 +7,56 @@
         background-size: cover;
 }
 */
-@media only screen and (min-width: 600px) {
-    body { 
-	text-align: center;
+body { 
+		text-align: center;
     background-color: #262626;
     background-position: unset;
     background-size: contain;
     margin-left: auto;
     margin-right: auto;
 }
-	img {
+img {
 		width: 100%;
     height: auto;
 	}
 
-	.box {
-		bottom:500px;
+.box {
+		text-align: center;
+   	position: fixed;
+    width: 100%
+	bottom:500px;
 	}
 }
 
+@media only screen and (min-device-width: 400px) {
+	img {
+		width: 60%;
+    height: auto;
+    margin-top: -60px;
+	}
 
-img {
-	height: 100%;
-    width: auto;
-    margin-top: -58px;
-}
+	body {
+			text-align: center;
+    	background-color: #262626;
+    	background-position: center;
+    	/* background-image: url(/img/money.gif); */
+    	background-repeat: no-repeat;
+    	background-size: contain;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.box {
+    	text-align: center;
+    position: fixed;
+    bottom: 416px;
+    width: 100%;
+	} 
 }
 
-body {
-	text-align: center;
-    background-color: #262626;
-    background-position: center;
-    /* background-image: url(/img/money.gif); */
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 input {
-	border: 1px solid #262626;
+		border: 1px solid #262626;
 }
 
 .heading_wombat {
@@ -55,17 +65,11 @@ input {
     font-family: cursive;
     font-size: 65px;
     margin-top: 0px;
+    background-color: #262626;
 }
 
-.box {        
-       text-align: center;
-    position: fixed;
-    bottom: 470px;
-    width: 100%;
-} 
-
 .icon {
-	height: 2em;
+		height: 2em;
     width: 11em;
     background-color: #ffffff;
     border-radius: 25px;
@@ -96,11 +100,7 @@ input {
     position: fixed;
     width: 100%;
 }
-}
 
-/*.results {
-        text-align: left
-}*/
 
 button {
 	    background-color: #ffffff;
