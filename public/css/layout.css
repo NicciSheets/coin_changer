@@ -20,12 +20,18 @@
 		width: 100%;
     height: auto;
 	}
+
+	.box {
+		bottom:500px;
+	}
 }
 
 
 img {
-	height: 80%;
-    width: 50%;
+	height: 100%;
+    width: auto;
+    margin-top: -58px;
+}
 }
 
 body {
@@ -54,7 +60,7 @@ input {
 .box {        
        text-align: center;
     position: fixed;
-    bottom: 398px;
+    bottom: 470px;
     width: 100%;
 } 
 
