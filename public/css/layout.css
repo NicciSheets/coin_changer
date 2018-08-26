@@ -76,7 +76,7 @@ input {
         text-align: left
 }*/
 
-button {
+input.button {
 	    background-color: #ffffff;
     border: 1px solid #262626;
     color: #262626;
@@ -91,7 +91,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+input.button:hover {
     background-color: #262626;
     color:  #ffffff;
 }
