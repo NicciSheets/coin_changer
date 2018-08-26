@@ -1,37 +1,55 @@
 <head>
-<link rel="stylesheet" href="/css/layout.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/layout.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<embed src="/music/cha-ching.wav"  width=0 height=0 name="soundfile" id="sound1">
 </head>
+
 <body>
+	
 <form method = "post" action = "get_change"> <!--action is where you're routing data -->
 <h1 id="heading" name="my_heading" class="heading_wombat"> Make It Rain </h1>
+
 <div class="box">
-  <div class="container-1">
-      <span class="icon"><i class="fa fa-search"></i></span>
-      <input type="number" name = "coin_input" id="search" placeholder="Show me the money..." /></n><br>
-      <button type="submit"> $$ </button>
-  </div>
+	<div class="container-1">
+	    <span class="icon"><i class="fa fa-search"></i></span>
+	    <input type="number" name = "coin_input" id="search" placeholder="Show me the money..." /></n><br>
+	    <input type="submit" name="apb" value="$$" onClick="EvalSound('sound1')">
+		<!-- <button type="submit" > $$ </button> -->
+	</div>
 </div>
 </form>
+
 <div class = "box2">
-<div class = "box3">
-	<%= input2 %>
-</div>
-<div class = "box4">
-	<% result.each_pair do |key, value| %>
-		<% if value > 0 %>
-			<% if value > 1 %>
-				<%= value %><!-- the equals sign (=) means it shows on 	user screen -->
-					<% if key.to_s == "Penny" && value > 1 %>
-						<%= key = "Pennies" %>
-					<% elsif value > 1 %>
-						<%= key.to_s + "s" %>
-					<% end %>
-			<% else %>
-				<%= value %> <%= key %>
+	<div class = "box3">
+		<%= input2 %>
+	</div>
+	<div class = "box4">
+		<% result.each_pair do |key, value| %>
+			<% if value > 0 %>
+				<% if value > 1 %>
+					<%= value %><!-- the equals sign (=) means it shows on 	user screen -->
+						<% if key.to_s == "Penny" && value > 1 %>
+							<%= key = "Pennies" %>
+						<% elsif value > 1 %>
+							<%= key.to_s + "s" %>
+						<% end %>
+				<% else %>
+					<%= value %> <%= key %>
+				<% end %>
 			<% end %>
 		<% end %>
-	<% end %>
+	</div>
 </div>
-</div>
-</body>		
+</body>
+
+<footer>
+	<script>
+		function EvalSound(soundobj) {
+		 
+		  var thissound = document.getElementById(soundobj);
+		 
+		  thissound.Play();
+		 
+		}
+	</script>	
+</footer>
